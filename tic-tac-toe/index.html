@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="area-wraper">
+        <div id="area" >
+            <div class="head-wraper">
+                <div class="logo"><img src="./assets/logo.svg" alt=""></div>
+                <div class="turn"><p>TURN</p></div>
+                <div class="restart-wraper">
+                    <div id="restart"><img src="./assets/icon-restart.svg" alt=""></div>
+                </div>
+            </div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="x-score">
+                <p class="score-title">X(YOU)</p>
+                <p id="x-count">0</p>
+            </div>
+            <div class="ties-score">
+                <p class="score-title">TIES</p>
+                <p id="ties-count">0</p>
+            </div>
+            <div class="o-score">
+                <p class="score-title">O(CPU)</p>
+                <p id="o-count">0</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-result-wraper">
+        <div id="overlay"></div>
+        <div id="modal-wimdow">
+            <div id="content">
+                <div id="won-wraper">
+                    <p class="massage" >YOU WON!</p>
+                    <p class="x-takes"><img src="./assets/icon-x.svg" alt=""> TAKES THE ROUND</p>
+                </div>
+                <div id="lose-wraper">
+                    <p class="massage" >OH NO, YOU LOST...</p>
+                    <p class="o-takes"><img src="./assets/icon-o.svg" alt=""> TAKES THE ROUND</p>
+                </div>
+                <div id="tied-wraper">
+                    <p class="round-tied" >ROUNT TIED</p>
+                </div>
+            </div>
+            <div id="btn-cloce">NEXT ROUND</div>
+
+        </div>
+    </div>
+
+    
+
+    <script src="./main.js"></script>
+</body>
+</html>
